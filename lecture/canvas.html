@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Canvas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Load bootstrap's CSS in head section -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>        
+        
+        <!-- Nav bar section  -->
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+            <div class="container">              
+                
+                    <a class="navbar-brand" href="../index.html">
+                      <img src="lec/AIT.png" width="150" height="" alt="">
+                    </a>
+                  
+                <a class="navbar-brand" href="../index.html">AHMEDABAD INSTITUTE OF TECHNOLOGY</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html"><i class="bi bi-caret-right-square-fill"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="register.html">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br>
+        <h1 class="display-8 col-4 d-flex justify-content-center">HTML Canvas</h1><br><br>
+        <br>
+        <div class="card text-white bg-secondary  style="max-width: 18rem;">
+            <h5 class="card-header">Drawing Rectangles</h5>
+            <div class="card-body">
+              <h5 class="card-title">Method and Description</h5>
+              <p class="card-text">fillRect(x,y,width,height) :: This method draws a filled rectangle.</p>
+              <p class="card-text">strokeRect(x,y,width,height) :: This method draws a rectangular outline.</p>
+              <p class="card-text">clearRect(x,y,width,height) :: This method clears the specified area and makes it fully transparent</p>
+              <a href="rect.html" class="btn btn-primary">Click Here</a>
+            </div>
+          </div>
+
+          <br>
+        <div class="card text-white bg-success  style="max-width: 18rem;">
+            <h5 class="card-header">Create Gradients</h5>
+            <div class="card-body">
+              <h5 class="card-title">Method and Description</h5>
+              <p class="card-text">addColorStop(offset, color) :: This method adds a color stop with the given color to the gradient at the given offset. Here 0.0 is the offset at one end of the gradient, 1.0 is the offset at the other end.</p>
+              <p class="card-text">createLinearGradient(x0, y0, x1, y1) :: This method returns a CanvasGradient object that represents a linear gradient that paints along the line given by the coordinates represented by the arguments.</p>
+              <p class="card-text">createRadialGradient(x0, y0, r0, x1, y1, r1) :: This method returns a CanvasGradient object that represents a radial gradient that paints along the cone given by the circles represented by the arguments. </p>
+              <a href="grad.html" class="btn btn-primary">Click Here</a>
+            </div>
+          </div>
+
+          <br>
+        <div class="card text-white bg-danger  style="max-width: 18rem;">
+            <h5 class="card-header">Drawing Lines</h5>
+            <div class="card-body">
+              <h5 class="card-title">Method and Description</h5>
+              <p class="card-text">beginPath() :: This method resets the current path.</p>
+              <p class="card-text">moveTo(x, y) :: This method creates a new subpath with the given point.</p>
+              <p class="card-text">closePath() :: This method marks the current subpath as closed, and starts a new subpath with a point the same as the start and end of the newly closed subpath.</p>
+              <p class="card-text">fill() :: This method fills the subpaths with the current fill style.</p>
+              <p class="card-text">stroke() :: This method strokes the subpaths with the current stroke style.</p>
+              <p class="card-text">lineTo(x, y) :: This method adds the given point to the current subpath, connected to the previous one by a straight line.</p>
+              <a href="line.html" class="btn btn-primary">Click Here</a>
+            </div>
+          </div>
+
+          <br>
+        <div class="card text-white bg-warning  style="max-width: 18rem;">
+            <h5 class="card-header">Styles and Colors</h5>
+            <div class="card-body">
+              <h5 class="card-title">Method and Description</h5>
+              <p class="card-text">fillStyle :: This attribute represents the color or style to use inside the shapes.</p>
+              <p class="card-text">strokeStyle :: This attribute represents the color or style to use for the lines around shapes.</p>
+              <a href="color.html" class="btn btn-primary">Click Here</a>
+            </div>
+          </div>
+          
+          
+
+          <div class='row'>
+            <div class='col mt-4'>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item"><a class="page-link" href="lechome.html">Previous</a></li>
+                        
+                        <li class="page-item"><a class="page-link" href="svg.html">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer section  -->
+        <nav class="navbar navbar-dark bg-dark mt-5">
+            <div class="container">
+                <div class='mx-auto text-center text-white p-2'>
+                    <h4 class='mb-2'>SHREYA PATEL</h4>
+                    <div>180020107051</div>
+                    
+                    <div>Ahmedabad Institute Of Technology © 2021</div>
+                </div>
+            </div>
+        </nav>
+        <!-- Load bootstrap's JS just before the closing body tag -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

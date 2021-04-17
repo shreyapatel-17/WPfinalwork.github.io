@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic JS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    position: relative; 
+  }
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+    
+  <a class="navbar-brand" href="../index.html">AHMEDABAD INSTITUTE OF TECHNOLOGY</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">JS EX-1</a></li>
+          <li><a href="#section2">JS EX-2</a></li>
+          <li><a href="#section3">JS EX-3</a></li>
+          <li><a href="#section41">JS EX-4</a></li>
+          <li><a href="lechome.html">Previous</a></li>
+          <li><a href="canvas.html">Next</a></li>
+        </ul>
+      </div>      
+    </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+  <h1>JS EX-1</h1>
+  <div class="intro">
+    <p><h1 class="display-2">Find Max Number</h1></p><br>
+    <div class="input-group mb-3">
+        <input class="text-primary" type="number" id="no1" placeholder="Enter First Number " aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <input class="text-primary" type="number" id="no2" placeholder="Enter Second Number " aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <input class="text-primary" type="number" id="no3" placeholder="Enter Third Number " aria-describedby="basic-addon1">
+      </div>
+      <br>
+      <button type="submit" id="btn" onclick="max()" class="btn btn-primary">Submit</button>
+    
+    <br><br>
+    <p id="con_demo">Largest Number is : </p>
+
+    <script>
+        function max() {
+            let n1 = parseFloat(document.getElementById("no1").value);
+            let n2 = parseFloat(document.getElementById("no2").value);
+            let n3 = parseFloat(document.getElementById("no3").value);
+            let max ;
+            if (n1 >= n2 && n1 >= n3) {
+                max = n1;
+            } 
+            else if (n2 >= n1 && n2 >= n3) {
+                max = n2;
+            } 
+            else {
+                max = n3;
+            }
+            document.getElementById("con_demo").innerHTML = "Largest Number is : " + max;
+        }
+        
+    </script>
+</div>
+</div>
+<div id="section2" class="container-fluid">
+    <h1>JS EX-2</h1>
+    <div class="intro">
+      <p><h1 class="display-2">Find Area of a Triangle</h1></p><br>
+      <div class="input-group mb-3">
+          <input class="text-primary" type="number" id="r1" placeholder="Enter First Side " aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <input class="text-primary" type="number" id="r2" placeholder="Enter Second Side " aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <input class="text-primary" type="number" id="r3" placeholder="Enter Third Side " aria-describedby="basic-addon1">
+        </div>
+        <br>
+        <button type="submit" id="btn" onclick="tarea()" class="btn btn-primary">Submit</button>
+      
+      <br><br>
+      <p id="con_demo1">The area of the triangle is: </p>
+  
+      <script>
+          function tarea() {
+              let s1 = parseFloat(document.getElementById("r1").value);
+              let s2 = parseFloat(document.getElementById("r2").value);
+              let s3 = parseFloat(document.getElementById("r3").value);
+        
+              const s = (s1 + s2 + s3) / 2;
+              const areaValue = Math.sqrt(
+                    s * (s - s1) * (s - s2) * (s - s3)
+                );
+
+              document.getElementById("con_demo1").innerHTML = "The area of the triangle is: " + areaValue;
+          }
+          
+      </script>
+  </div>
+</div>
+<div id="section3" class="container-fluid">
+    <h1>JS EX-3</h1>
+    <div class="intro">
+        <p><h1 class="display-2">Find Fectorial Number using While Loop :</h1></p><br>
+        <div class="input-group mb-3">
+            <input class="text-primary" type="number" id="fnum" placeholder="Enter the Number " aria-describedby="basic-addon1">
+          </div>
+          <br>
+          <button type="submit" id="btn" onclick="fecto()" class="btn btn-primary">Submit</button>
+       
+    <br><br>
+        <p id="loop_demo2">The Fectorial of given number is : </p>
+
+        <script>
+            function fecto() {
+            let fecto = parseFloat(document.getElementById("fnum").value);
+            let temp2 = fecto ;
+                if (fecto === 0 || fecto === 1){ 
+                    temp2 = 1;
+                }
+                while (fecto > 1) { 
+                    fecto--;
+                    temp2 *= fecto;
+                }
+
+                document.getElementById("loop_demo2").innerHTML = "The Fectorial of given number is : " + temp2;
+                } 
+        </script>
+    </div>
+</div>
+<div id="section41" class="container-fluid">
+  <h1>JS EX-4</h1>
+  <div class="intro">
+    <p><h1 class="display-2">Pyramid Maker Using For loop:</h1></p><br>
+    <div class="input-group mb-3">
+        <input class="text-primary" type="number" id="pnum" placeholder="Enter Total Number of Rows " aria-describedby="basic-addon1">
+      </div>
+      <br>
+      <button type="submit" id="btn" onclick="pera()" class="btn btn-primary">Submit</button> 
+    <br><br>
+    <p id="loop_demo"></p>
+
+    <script>
+        function pera() {
+            let totalNumberofRows = parseFloat(document.getElementById("pnum").value);
+            let temp = "";
+            for (var i = 1; i <= totalNumberofRows; i++) {
+                for (var j = 1; j <= i; j++)
+                    {
+                        temp += j;
+                    }
+                    temp += "<br>";
+            }
+            document.getElementById("loop_demo").innerHTML = temp ;
+            
+        }
+        
+    </script>
+</div>
+</div>
+
+
+</body>
+</html>

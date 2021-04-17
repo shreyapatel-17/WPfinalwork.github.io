@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {box-sizing: border-box;}
+body { 
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+ overflow: hidden;
+ background-color: #55E71D;
+ padding: 20px 10px;
+}
+.footer {
+ overflow: hidden;
+ background-color: #E7661D ;
+ padding: 0.005px 10px;
+text-align: center;
+}
+.header a {
+ float: left;
+ color: black;
+ text-align: center;
+ padding: 12px;
+ text-decoration: none;
+ font-size: 18px; 
+ line-height: 25px;
+ border-radius: 4px;
+}
+.header-right {
+ float: right;
+}
+@media screen and (max-width: 500px) {
+ .header a {
+ float: none;
+ display: block;
+ text-align: left;
+ } 
+.header-right {
+text-align: center;
+ }
+}
+img {
+ border-radius: 5px;
+ padding: 0px;
+ width: 200px;
+}
+.header1 {
+ overflow: hidden;
+ background-color:#E7D11D;
+ padding:0px;
+}
+.slider-menu > li {
+display: inline-flex;
+padding: 14px;
+margin-left: 2px;
+font-family: 'Quicksand', sans-serif;
+color: black;
+cursor: pointer;
+transition: 0.3s linear all;
+user-select: none;
+}
+.slider-menu > li:hover {
+color: #faa;
+box-shadow: 0 50px 5px rgba(0, 0, 0, 0.15) inset;
+}
+.container1{
+text-align: center;
+}
+#btn{
+font-size: 15px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<img src="img/AIT logo.png">
+ <div class="header-right">
+ <h1 style="text-align:center;">Ahmedabad Instittue Of Technology</h1>
+ </div>
+</div>
+<div class="header1">
+<ul class="slider-menu">
+<li>Home</li>
+<li>About Us</li>
+<li>Campus</li>
+<li>Placement</li>
+<li>Resources</li>
+<li>Contact Us</li>
+</ul>
+</div>
+<h1 style="text-align:center;">Registration Form</h1>
+<table border="10" frame="BOX" rules="NONE"align='center'>
+<tbody>
+<tr>
+<td><label for="name"> First Name: </label></td>
+<td><input id="name" maxlength="50" name="name" type="text" /></td>
+</tr>
+<tr>
+<td><label for="course">Last Name: </label></td>
+<td><input id="course" maxlength="50" name="course" type="text" /></td>
+</tr>
+<tr>
+<td><label for="branch">Branch: </label></td>
+<td><input id="branch" maxlength="50" name="branch" type="text" /></td>
+</tr>
+<tr>
+<td><label for="email">Email_Address:</label></td>
+<td><input id="email" maxlength="50" name="email" type="text" /></td>
+</tr>
+<tr>
+<td><label for="Number">Phone No.:</label></td>
+<td><input type="number" id="number" maxlength="10" name="Phone No."/></td>
+</tr>
+<tr>
+<td><label for="ADD">Address:</label></td>
+<td><input id="ADD" maxlength="50" name="ADD" type="text" /></td>
+</tr>
+</tbody>
+</table>
+<div class="container1">
+<button id ="btn"> Register </button>
+</div>
+<div class='row'>
+    <div class='col mt-4'>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+                <li class="page-item"><a class="page-link" href="airticket.html">Previous</a></li>
+                
+                <li class="page-item"><a class="page-link" href="emp.html">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<footer>
+<div class="footer">
+ <p class="text-muted mb-0 py-2">© 2021 All rights reserved.</p>
+<p>Shreya Patel 180020107051</p>
+ </div>
+ </div>
+</footer>
+</body>
+</html>

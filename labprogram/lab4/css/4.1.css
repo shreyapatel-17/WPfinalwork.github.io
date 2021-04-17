@@ -1,0 +1,14 @@
+body{
+    background: antiquewhite;
+    display: block;
+    margin: 8px;
+   }
+   h1{
+    text-align: center;
+    margin:revert;
+   }
+   .container{
+    text-align: center;
+    display: block;
+    margin-top: 0em;
+   }
